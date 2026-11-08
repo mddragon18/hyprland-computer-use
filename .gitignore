@@ -1,0 +1,14 @@
+# Build output of the pointer helper (catalog rule 17: no committed binaries)
+plugin/hyprland/pointer/bin/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Scratch captures
+*.png
+!docs/*.png
+
+# Editor/OS noise
+.DS_Store
+*.swp

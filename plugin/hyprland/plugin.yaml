@@ -1,0 +1,20 @@
+manifest_version: 2
+name: hyprland
+version: 0.3.0
+description: >-
+  Hyprland-native computer use for Hermes: grim capture, wlr-virtual-pointer
+  clicks/drags/scroll, wtype text and keys, hyprctl window targeting. No
+  XWayland, no accessibility tree, no root, no /dev/uinput.
+author: mddragon18
+license: MIT
+homepage: https://github.com/mddragon18/hyprland-computer-use
+tags:
+  - computer-use
+  - hyprland
+  - wayland
+  - desktop-automation
+requires_hermes: ">=0.23.0"
+platforms:
+  - linux
+config_keys:
+  - computer_use.hyprland
