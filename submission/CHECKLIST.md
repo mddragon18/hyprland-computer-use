@@ -6,11 +6,11 @@ committed at `docs/demo-hyprland.mp4`.
 
 ## 1. Repository
 
-- [ ] Create `github.com/mddragon18/hyprland-computer-use` as a **public** repo.
-- [ ] Description: "Hyprland computer-use backend for Hermes — grim + wlr-virtual-pointer + wtype; no X11, AT-SPI, root, or /dev/uinput."
-- [ ] Topics: `hermes`, `hyprland`, `wayland`, `computer-use`, `desktop-automation`.
-- [ ] License visible as MIT (the `LICENSE` file is already in the tree).
-- [ ] Confirm the tree contains no binaries or bytecode:
+- [x] Create `github.com/mddragon18/hyprland-computer-use` as a **public** repo.
+- [x] Description: "Hyprland computer-use backend for Hermes — grim + wlr-virtual-pointer + wtype; no X11, AT-SPI, root, or /dev/uinput."
+- [x] Topics: `hermes`, `hyprland`, `wayland`, `computer-use`, `desktop-automation`.
+- [x] License visible as MIT (the `LICENSE` file is already in the tree).
+- [x] Confirm the tree contains no binaries or bytecode:
 
   ```sh
   git ls-files | grep -Ei '\.(pyc|pyo|so|o|a|dll|dylib)$|(^|/)bin/' || echo "clean"
@@ -55,17 +55,18 @@ plugin/hyprland/pointer/bin/hypr-vinput probe     # ok zwlr_virtual_pointer_mana
 
 ## 4. Commit and pin
 
-The release and demo commits are already in the local tree; only the push is
-outstanding.
+The release and demo commits are pushed to `main`; the pinned commit for the
+catalog is `2296c77728113eca13395d34ad6784cf2626d7d6` (the demo commit, which
+contains the full plugin tree and the video).
 
 ```sh
 git push origin main
 git rev-parse HEAD        # full 40-character SHA
 ```
 
-- [ ] `git status` is clean and the pushed tree matches the local tree.
-- [ ] Put the full SHA into `submission/plugin-catalog/hyprland.yaml`.
-- [ ] Re-run `hermes plugins validate` against a checkout at that exact SHA.
+- [x] `git status` is clean and the pushed tree matches the local tree.
+- [x] Put the full SHA into `submission/plugin-catalog/hyprland.yaml`.
+- [x] Re-run `hermes plugins validate` against a checkout at that exact SHA.
 - [ ] If you add screenshots, pin their raw URLs to that SHA
       (`https://raw.githubusercontent.com/mddragon18/hyprland-computer-use/<sha>/docs/...`).
 
@@ -79,6 +80,9 @@ cp /path/to/submission/plugin-catalog/hyprland.yaml plugin-catalog/hyprland.yaml
 git add plugin-catalog/hyprland.yaml
 git commit -m "catalog: add hyprland computer-use provider"
 ```
+
+Opened as https://github.com/NousResearch/hermes-agent/pull/151701 (one file,
+`plugin-catalog/hyprland.yaml`).
 
 PR body — say what it does, which Hermes surfaces it uses, and the rule 13
 disclosures:
@@ -97,10 +101,10 @@ disclosures:
 - **Limitations:** pixel-only, no modifier+click or modifier+drag (would need
   `/dev/uinput`), multi-monitor uses the layout bounding box.
 
-- [ ] Catalog CI is green.
-- [ ] `subdir: plugin/hyprland` resolves and the README renders at the pinned SHA.
-- [ ] `version: "0.3.0"` matches `plugin.yaml`.
-- [ ] `requires_hermes: ">=0.23.0"` matches `plugin.yaml`.
+- [ ] Catalog CI is green (check PR 151701).
+- [x] `subdir: plugin/hyprland` resolves and the README renders at the pinned SHA.
+- [x] `version: "0.3.0"` matches `plugin.yaml`.
+- [x] `requires_hermes: ">=0.23.0"` matches `plugin.yaml`.
 
 ## 6. Demo
 
@@ -109,7 +113,8 @@ disclosures:
       from a screen recording; `docs/DEMO.md` describes both this cut and the
       longer live-recording plan.
 - [x] No credentials, notifications, or personal files in frame.
-- [ ] Push the repo, then upload the video as a GitHub release asset as well.
+- [x] Push the repo, then upload the video as a GitHub release asset as well
+      (`v0.3.0`, asset size 10,979,224 bytes).
 - [ ] Post on X with `submission/X-POST.md`, tagging `@NousResearch`.
 - [ ] Fill in the hackathon submission form with the repo, catalog PR, and video
       links before the deadline.
@@ -120,5 +125,5 @@ disclosures:
       build step present, disclosures complete).
 - [x] `README.md`, `REPORT.md`, and `docs/DEMO.md` agree on version and results.
 - [x] `install.sh` works from a clean clone.
-- [ ] `submission/plugin-catalog/hyprland.yaml` has a real SHA, not the placeholder.
+- [x] `submission/plugin-catalog/hyprland.yaml` has a real SHA, not the placeholder.
 - [x] No stale references to the retired protocol-probe directory.
