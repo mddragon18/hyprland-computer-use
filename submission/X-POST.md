@@ -15,11 +15,14 @@ github.com/mddragon18/hyprland-computer-use
 
 ## Alt text for the video
 
-> A Hyprland desktop. A terminal shows `hermes computer-use doctor` with nine
-> green checks. A Hermes agent captures only the Brave window, then fills and
-> submits a local form using clicks, typing, and a final capture to confirm.
-> The run is shown speeded up with a call counter. The pointer helper is built
-> from C source during the video.
+> A dark motion-graphics film with cyan grid lines. On-screen text reads
+> "Computer use on Hyprland. No X11. No overlay. No root." It names three
+> protocols: grim, wlr-virtual-pointer, and wtype. A real 1600×871 Brave window
+> capture fills the frame with a coordinate ruler over it. An amber log line
+> shows `input_target_mismatch`. Five real captures show a local form being
+> filled: Ada Lovelace, ada@example.com, Team, Submit registration. A fresh
+> capture shows "Response recorded." The end card reads "Wayland, end to end"
+> with two install commands and github.com/mddragon18/hyprland-computer-use.
 
 ## Reply (optional)
 
@@ -34,7 +37,8 @@ most shortcuts.
 
 ## Before posting
 
-- Confirm the video is under 90 seconds and plays without sound.
+- Confirm the video is under 90 seconds and makes sense muted (X autoplays
+  without sound).
 - Check that no credentials, notifications, or personal files are visible.
 - Tag `@NousResearch` in the post body, not only in a reply.
 - Submit the form before **2026-11-11 17:00 EST** (2026-11-12 03:30 IST).

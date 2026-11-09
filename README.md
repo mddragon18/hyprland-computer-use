@@ -47,7 +47,7 @@ hermes computer-use doctor
 plugin/hyprland/          provider, backend, manifest, and documentation
 plugin/hyprland/pointer/  C source for the Wayland pointer helper and Makefile
 tests/smoke.py            direct provider smoke tests
-docs/                     demo storyboard and screenshots
+docs/                     demo video, storyboard, and screenshots
 submission/               catalog entry and submission checklist
 REPORT.md                 test log and result analysis
 ```

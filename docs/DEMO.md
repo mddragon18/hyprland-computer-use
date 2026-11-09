@@ -1,4 +1,24 @@
-# 90-second demo
+# Demo
+
+## Submission cut
+
+`docs/demo-hyprland.mp4` — 74 s, 1920×1080 at 30 fps, music and on-screen text
+only; no voiceover.
+
+The cut is assembled in HyperFrames from five real window captures and one
+real log line. The captures come from the Hermes session on 2026-11-08 between
+15:32:35 and 15:37:56, whose prompt was "Use only computer_use. Capture the
+Brave window…" and whose tool calls were all `computer_use`. The guard line is
+from 2026-11-06 22:32:50. The film presents those captures as motion graphics;
+it does not re-enact the session and does not synthesize any UI.
+
+Scenes: title → three protocols → window scope → target guard → the task
+(real captures) → confirmation → install card.
+
+## Live-recording plan
+
+The rest of this file is the longer screen-recording plan, kept for reference.
+It records a fresh run end to end rather than assembling captures.
 
 The video must stay under 90 seconds. Record a real agent task, then compress
 the waiting. A 6-call task on a slow local model can take several minutes; show

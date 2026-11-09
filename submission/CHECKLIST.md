@@ -1,7 +1,8 @@
 # Submission checklist
 
 Deadline: **2026-11-11 17:00 EST** = **2026-11-12 03:30 IST**.
-Nothing here needs to run on the live desktop except the demo recording.
+Nothing here needs to run on the live desktop; the demo is already cut and
+committed at `docs/demo-hyprland.mp4`.
 
 ## 1. Repository
 
@@ -54,9 +55,10 @@ plugin/hyprland/pointer/bin/hypr-vinput probe     # ok zwlr_virtual_pointer_mana
 
 ## 4. Commit and pin
 
+The release and demo commits are already in the local tree; only the push is
+outstanding.
+
 ```sh
-git add -A
-git commit -m "hyprland: 0.3.0 — self-contained pointer helper, no uinput"
 git push origin main
 git rev-parse HEAD        # full 40-character SHA
 ```
@@ -102,10 +104,12 @@ disclosures:
 
 ## 6. Demo
 
-- [ ] Record from `docs/DEMO.md`; final file is **under 90 seconds**.
-- [ ] Wake the monitor first (`dpmsStatus: true`) or grim hangs.
-- [ ] No credentials, notifications, or personal files on screen.
-- [ ] Upload the video and keep a second copy as a GitHub release asset.
+- [x] Final file is `docs/demo-hyprland.mp4`, **74 seconds**, 1920×1080 at
+      30 fps. It is cut from five real captures and one real guard log line, not
+      from a screen recording; `docs/DEMO.md` describes both this cut and the
+      longer live-recording plan.
+- [x] No credentials, notifications, or personal files in frame.
+- [ ] Push the repo, then upload the video as a GitHub release asset as well.
 - [ ] Post on X with `submission/X-POST.md`, tagging `@NousResearch`.
 - [ ] Fill in the hackathon submission form with the repo, catalog PR, and video
       links before the deadline.
