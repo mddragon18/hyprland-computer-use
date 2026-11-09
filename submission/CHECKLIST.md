@@ -114,7 +114,7 @@ disclosures:
       longer live-recording plan.
 - [x] No credentials, notifications, or personal files in frame.
 - [x] Push the repo, then upload the video as a GitHub release asset as well
-      (`v0.3.0`, asset size 10,979,224 bytes).
+      (`v0.3.0`).
 - [ ] Post on X with `submission/X-POST.md`, tagging `@NousResearch`.
 - [ ] Fill in the hackathon submission form with the repo, catalog PR, and video
       links before the deadline.
